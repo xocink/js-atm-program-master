@@ -8,7 +8,7 @@ class NumbersValidator {
     if (typeOfVariable !== 'number') {
       throw new Error(`[${number}] is not of type "Number" it is of type "${typeOfVariable}"`);
     } else {
-      return number % 2 === 0;
+      return number % 2 === 0
     }
   }
 
