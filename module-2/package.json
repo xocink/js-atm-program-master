@@ -1,0 +1,42 @@
+{
+  "name": "module-2",
+  "version": "1.0.0",
+  "description": "Module 2: Unit Testing in JavaScript",
+  "license": "EPAM Systems",
+  "private": true,
+  "scripts": {
+    "test": "mocha",
+    "coverage": "c8 npm test",
+    "lint": "eslint  ./ ",
+    "prettier": "prettier --w"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "c8": "^7.12.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test"
+    ]
+  },
+  "mocha": {
+    "spec": "tests/**/*.test.js",
+    "reporter": "mochawesome"
+  },
+  "c8": {
+    "check-coverage": true,
+    "branches": 80,
+    "lines": 80,
+    "functions": 80,
+    "statements": 80
+  }
+}

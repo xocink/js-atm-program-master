@@ -1,0 +1,10 @@
+{
+  "name": "module-3",
+  "version": "1.0.0",
+  "description": "Module-3: WebdriverIO. Locators",
+  "license": "EPAM Systems",
+  "private": true,
+  "scripts": {
+    "test": "wdio run ./src/configs/wdio.conf.js"
+  }
+}

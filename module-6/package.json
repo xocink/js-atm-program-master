@@ -1,0 +1,13 @@
+{
+  "name": "module-6",
+  "version": "1.0.0",
+  "description": "Module 6: WebdriverIO: Page Object Model",
+  "license": "EPAM Systems",
+  "private": true,
+  "scripts": {
+    "test": "wdio run src/configs/wdio.conf.js"
+  },
+  "dependencies": {
+    "expect-webdriverio": "^3.4.0"
+  }
+}
